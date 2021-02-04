@@ -1,2 +1,0 @@
-const testArray = [];
-const anotherTest = [];
