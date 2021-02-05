@@ -4,8 +4,9 @@ project 1 - A Random Quote Generator
 ******************************************/
 
 // For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
+// Check the "Project Resources" section of the project instructions
+// Reach out in your Slack community - 
+// https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 /*** 
  * `quotes` array 
@@ -30,4 +31,5 @@ project 1 - A Random Quote Generator
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", 
+printQuote, false);
