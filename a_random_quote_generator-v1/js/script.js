@@ -96,7 +96,9 @@ const printQuote = () => {
     };
     quoteHTML += `</p>`;
     document.getElementById('quote-box').innerHTML = quoteHTML;
-    randomBackgroundColor();
+    randomBackgroundColor();   
+    clearInterval(timer);
+    timer = autoUpdateQuote();
 };
 
 /***
@@ -111,6 +113,18 @@ const randomBackgroundColor = () => {
     const randomNumber3 = Math.round(Math.random() * 255);
     document.getElementById('quote-box').parentElement.style.backgroundColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
 }
+
+/***
+ * `autoUpdateQuote` function
+ * This function return the interval to auto update quote every 10 seconds.
+ * If the 'printQuote' is called, the variable this function will be stored
+ * in, will be cleared and new setInterval will be set with this function.
+***/
+
+const autoUpdateQuote = () => {
+    return setInterval(printQuote, 10000); 
+};
+let timer = autoUpdateQuote();
 
 /***
  * click event listener for the print quote button
