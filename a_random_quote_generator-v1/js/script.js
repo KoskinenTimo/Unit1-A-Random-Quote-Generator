@@ -10,13 +10,16 @@ project 1 - A Random Quote Generator
 
 /*** 
  * `quotes` array 
+ * A collection of known quotes with 4 properties. 'quote' and 'source' mandatory, 
+ * 'year' and 'cication' optional.
 ***/
 
 const quotes = [
     {
         quote:"Veni, vidi, vici!", 
         source:"Julius Caesar", 
-        year:"47 BC"
+        year:"47 BC",
+        tags:"politics"
     },
     {
         quote:"Happiness is a choice that requires effort at times.", 
@@ -26,12 +29,14 @@ const quotes = [
     {
         quote:"I will either find a way, or make one.", 
         source:"Hannibal", 
-        year:"210 BC"
+        year:"210 BC",
+        tags:"politics"
     },
     {
         quote:"I have seen all, I have heard all, I have forgotten all.", 
         source:"Marie Antoinette", 
-        year:"1790 AD"
+        year:"1790 AD",
+        tags:"humor"
     },
     {
         quote:"Where there is love there is life.", 
@@ -55,6 +60,8 @@ const quotes = [
 
 /***
  * `getRandomQuote` function
+ * Pulls a quotes randomly from 'quotes' array using Math.random().
+ * Returns quote object.
 ***/
 
 const getRandomQuote = () => {
@@ -64,6 +71,9 @@ const getRandomQuote = () => {
 
 /***
  * `printQuote` function
+ * Builds an HTML string and inputs the string to HTML element with id 
+ * 'quote-box'.
+ * Uses 'getRandomQuote()' to get quote object. 
 ***/
 
 const printQuote = () => {
