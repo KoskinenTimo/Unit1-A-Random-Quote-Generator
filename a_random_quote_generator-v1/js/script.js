@@ -90,11 +90,22 @@ const printQuote = () => {
         quoteHTML += `  <span class="year">${randomQuote.year}</span>
         `;
     };
+    if(randomQuote.tags) {
+        quoteHTML += `  <span class="year">${randomQuote.tags}</span>
+        `;
+    };
     quoteHTML += `</p>`;
     document.getElementById('quote-box').innerHTML = quoteHTML;
 };
 
+/***
+ * `randomBackgroundColor` function
+ * 
+***/
 
+const randomBackgroundColor = () => {
+    
+}
 
 /***
  * click event listener for the print quote button
