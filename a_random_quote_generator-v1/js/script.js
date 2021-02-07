@@ -96,15 +96,20 @@ const printQuote = () => {
     };
     quoteHTML += `</p>`;
     document.getElementById('quote-box').innerHTML = quoteHTML;
+    randomBackgroundColor();
 };
 
 /***
  * `randomBackgroundColor` function
- * 
+ * Creates a random color code and updates the backgroundColor of the HTML element 
+ * with id 'quote-box' each time the quote is pulled. 
 ***/
 
 const randomBackgroundColor = () => {
-    
+    const randomNumber1 = Math.round(Math.random() * 255);
+    const randomNumber2 = Math.round(Math.random() * 255);
+    const randomNumber3 = Math.round(Math.random() * 255);
+    document.getElementById('quote-box').style.backgroundColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
 }
 
 /***
