@@ -11,6 +11,7 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+
 const quotes = [
     {
         quote:"Veni, vidi, vici!", 
@@ -56,6 +57,10 @@ const quotes = [
  * `getRandomQuote` function
 ***/
 
+const getRandomQuote = () => {
+    const randomNumber = Math.floor(Math.random() * quotes.length);
+    return quotes[randomNumber];
+};
 
 /***
  * `printQuote` function
@@ -68,5 +73,5 @@ const quotes = [
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", 
-printQuote, false);
+//document.getElementById('load-quote').addEventListener("click", 
+//printQuote, false);
