@@ -42,7 +42,7 @@ const quotes = [
         author:"Estelle Reiner", 
         year:"1989 AD",
         source: "When Harry met Sally - movie"
-    }
+    },
     {
         quote:"You talking to me?", 
         author:"Robert de Niro", 
