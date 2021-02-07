@@ -10,8 +10,8 @@ project 1 - A Random Quote Generator
 
 /*** 
  * `quotes` array 
- * A collection of known quotes with 4 properties. 'quote' and 'source' mandatory, 
- * 'year' and 'cication' optional.
+ * A collection of known quotes with 5 properties. 'quote' and 'source' are mandatory, 
+ * 'year', 'cication' and 'tags' are optional.
 ***/
 
 const quotes = [
