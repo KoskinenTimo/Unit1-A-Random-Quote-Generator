@@ -113,7 +113,6 @@ const randomBackgroundColor = () => {
     const randomNumber3 = Math.round(Math.random() * 255);
     document.querySelector("body").style.backgroundColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
 }
-// getElementById('quote-box').parentElement
 
 /***
  * `autoUpdateQuote` function
